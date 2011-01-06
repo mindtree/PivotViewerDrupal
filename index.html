@@ -1,0 +1,145 @@
+
+<html>
+<head>
+    <style type="text/css">
+        .style2
+        {
+            color: #339933;
+        }
+        .style3
+        {
+            font-size: larger;
+        }
+        .style4
+        {
+            color: #333333;
+        }
+        .style5
+        {
+            width: 143px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: x-small;
+        }
+        .style6
+        {
+            width: 369px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: x-small;
+        }
+        .style7
+        {
+            font-family: "Courier New", Courier, monospace;
+            font-size:small;
+            color:Highlight;
+            font-weight:bold;
+        }        
+    </style>
+</head>
+<body>
+
+<h2>
+	<div style="width: 100%; float: left;">
+    <div style="float: left; width: 60%" class="style2">Pivotviewer Module for Drupal</div>
+    <div style="float: left; width: 40%;"><img src="images/logo_inside.gif" alt=""/></div>
+    </div>
+</h2>
+
+    <span class="style4">The Pivotviewer Module for Drupal allows users to include 
+    a Silverlight PivotViewer control in their content pages like Articles and Basic Pages. </span> <br class="style4" />
+    <span class="style4">The Silverlight PivotViewer makes it easier to interact with massive amounts of data
+    and visualize them in a way that exposes value from the group.</span><br 
+        class="style4" /> 
+    <br />
+    <span class="style4">This component works on Drupal 7 version. 
+    It requires Drupal to be running on IIS with .NET Framework 4.0 version.<br />
+    <br />
+    <span class="style3">Contributors</span><br />
+    <span class="style4"><a href="http://www.mindtree.com">Mindtree Limited</a></span><br class="style4" />
+	<br/>    
+    <span class="style3">Download</span><br />
+    The latest version of the Pivotviewer module can be downloaded from the
+    <a href="https://github.com/mindtree/PivotViewerDrupal">project site</a>.<br />
+    <br />
+    </span><span class="style3">License</span><br />
+    <span class="style4">This software is released free of charge under the terms of the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License v2</a>. 
+    The license document is available <a href="license">here</a>.</span><br />
+    <br />
+    <html>
+
+    <span class="style3">
+        Install</span><br />
+    <span class="style4">To install the module, download the file pivot_viewer.zip and 
+    extract the contents to Drupal folder sites/all/modules/pivot_viewer. 
+    <br />
+    Also download the file pivot_viewer_button.zip and extract the contents to Drupal folder 
+    sites/all/modules/pivot_viewer_button. Login as the Drupal 
+    <br />
+   administrator, under the Modules page you will find the two PivotViewer related 
+    modules, enable both the modules and click on the
+    <br />
+    Save Configuration button. Then disable Clean URLs from Configuration -> Clean URLs -> Uncheck checkbox.
+    <br />
+        <br />
+    <b>Note:</b>To get the PivotViewer module working on Drupal 7, you need to also download the file web.config
+    from the project site and copy it in <br />Drupal's root folder. This web.config file contains a URL rewrite condition to 
+    ignore the PivotViewer module folder. <br /> This path needs to be modified according to the Drupal installation root. This is a workaround to fix a temporary issue.
+    <br />    
+    In case the web.config in Drupal's root folder has been modified, add the following condition to the rule "Short URLs" <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style7">&lt;add input="{URL}" pattern="^.*/sites/all/modules/pivot_viewer/addpivotcontrol/" ignoreCase="false" negate="true" /&gt;</span>
+    <br />
+    <br />
+    Before using the PivotViewer module, it has to be configured. The PivotViewer 
+    administration page can be accessed from the Modules 
+      <br />
+    page by clicking on the Configure link beside the PivotViewer module. Here you can configure the different data sources
+    that the PivotViewer can interact with.
+    <br />
+    The module supports data sources of type <a href="http://www.odata.org/">OData</a>,
+    <a href="http://msdn.microsoft.com/en-us/library/dd135733.aspx">Windows Azure Blob</a>,
+    <a href="http://twitter.com/">Twitter</a>,
+    <a href="http://drupal.org/project/media">Media Folder</a>, and
+    <a href="http://www.silverlight.net/learn/pivotviewer/collection-xml-schema/">Pivot Collection</a>
+    <br />
+    The administration page also allows the administrator to associate PivotViewer 
+    with available content types. 
+    <br />
+    <br />
+    Here is a screenshot of the PivotViewer administration page. <br />
+    <img src="images/Thumb/administration.jpg" alt="" onclick="window.open('images/administration.jpg');"/>
+    <br />
+    <br />
+    <span class="style3">
+       Usage of the module within content types</span></span><br />
+    <span class="style4">To embed a PivotViewer control in your content, you need to place the 
+    {pivotviewer} macro in the content (Article, Basic Page) text. <br /> The macro can be generated
+    by using the &#39;Add PivotViewer&#39; button in the Create content (Article, Basic Page) page. <br />
+    <img src="images/Thumb/contentcreation.jpg" alt="" onclick="window.open('images/contentcreation.jpg');"/>
+    <br /><br />
+    To view the button during content 
+    creation, it has to be associated with content types like Article and Basic Page as shown in the<br />
+    below screenshot. <br />
+    <img src="images/Thumb/configurepivotbutton.jpg" alt="" onclick="window.open('images/configurepivotbutton.jpg');"/>
+   
+    <br />
+    The macro allows users to select the data source which the PivotViewer control should load. 
+    <br/>
+    The macro should be copied in the content text after 
+        setting the Text format to &#39;Full HTML&#39;. To enable the content<br />
+    page to display the PivotViewer control, the &#39;Full HTML&#39; Text format should be configured from 
+    Configuration -&gt; Text formats -&gt; Configure<br />
+    as shown in the below screenshot to recognize the PivotViewer macro.<br />
+    <img src="images/Thumb/recognizepivotviewer.jpg" alt="" onclick="window.open('images/recognizepivotviewer.jpg');"/>
+    <br />
+    <br />
+        Once the content (Article, 
+        Basic Page) has been saved with the {pivotviewer} macro, a PivotViewer control will 
+        be displayed in its place on viewing the content.<br />
+        A saved Drupal Basic Page containing a PivotViewer will look something like this.<br />
+        <img src="images/Thumb/article.jpg" alt="" onclick="window.open('images/article.jpg');"/>
+        <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+
+</body>
+</html>

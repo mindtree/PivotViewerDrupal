@@ -33,6 +33,13 @@
             color:Highlight;
             font-weight:bold;
         }        
+        .style8
+        {
+            font-family: "Courier New", Courier, monospace;
+            font-size:small;
+            color:Red;
+            font-weight:bold;
+        }                
     </style>
 </head>
 <body>
@@ -88,6 +95,16 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style7">&lt;add input="{URL}" pattern="^.*/sites/all/modules/pivot_viewer/addpivotcontrol/" ignoreCase="false" negate="true" /&gt;</span>
     <br />
     <br />
+    If Drupal is installed behind a firewall, the network proxy details need to be updated by adding the following XML element in the file
+    <br /> sites/all/modules/pivot_viewer/addpivotcontrol/web.config. Under the root 'Configuration' element add the following element<br />
+    <span class="style7">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &lt;system.net&gt; <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;defaultProxy&gt; <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lt;proxy bypassonlocal="True" proxyaddress="http://<span class="style8">IPAddress:Port</span>"/&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;/defaultProxy&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;/system.net&gt;<br />
+    </span>
+    <br />
     Before using the PivotViewer module, it has to be configured. The PivotViewer 
     administration page can be accessed from the Modules 
       <br />
@@ -101,7 +118,8 @@
     <a href="http://www.silverlight.net/learn/pivotviewer/collection-xml-schema/">Pivot Collection</a>
     <br />
     The administration page also allows the administrator to associate PivotViewer 
-    with available content types. 
+    with available content types. Click on the 'Save Configuration' button <br />
+    after selecting the required content types.
     <br />
     <br />
     Here is a screenshot of the PivotViewer administration page. <br />

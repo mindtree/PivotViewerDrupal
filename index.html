@@ -77,16 +77,30 @@
 
     <span class="style3">
         Install</span><br />
-    <span class="style4">To install the module, download the file pivot_viewer.zip and 
-    extract the contents to Drupal folder sites/all/modules. 
+    <span class="style4">
     <br />
-    This module can also be installed from the Module Upload UI. Next login as the Drupal 
-   administrator, under the Modules page <br /> you will find  the PivotViewer 
-    module, enable the module and click on the
-    Save Configuration button.  Then disable Clean URLs <br /> from Configuration -> Clean URLs -> Uncheck checkbox.
+    <i><u>Download</u></i><br />
+    Microsoft Silverlight PivotViewer is distributed under the Microsoft Software License Terms and has not been included in this module. <br />
+    Users have to download the Silverlight PivotViewer binaries and include them in the module as described below.<br /> 
+    
+    <ol>
+    <li>Download the file <b>pivot_viewer.zip</b> from the project site and extract the contents to a local folder.</li> 
+    <li>In the extracted folder you will find the file <b>SilverlightPVClientControl.xap</b> under <b>pivot_viewer/addpivotcontrol/ClientBin</b>.</li>
+    <li>Rename file <b>SilverlightPVClientControl.xap</b> to <b>SilverlightPVClientControl.zip</b>.</li> 
+    <li>Download Microsoft Silverlight PivotViewer from <a href="http://www.microsoft.com/downloads/en/details.aspx?displaylang=en&FamilyID=9a1bb862-d80c-4145-9320-b279a63bff91">Microsoft site</a> and install it.</li>
+    <li>Add all the DLL files in the PivotViewer bin folder (normally <b>C:\Program Files\Microsoft SDKs\Silverlight\v4.0\PivotViewer\Aug10\Bin</b>) to <b>SilverlightPVClientControl.zip</b>.</li>
+    <li>Rename the file <b>SilverlightPVClientControl.zip</b> back to <b>SilverlightPVClientControl.xap</b> and package all the module files as <b>pivot_viewer.zip</b>.</li>
+    </ol>
+     <i><u>Install</u></i>
+    <br />
+    Install modified Drupal module file pivot_viewer.zip from the Module Upload UI or extract the contents to folder sites/all/modules. 
+    <br />
+    Then login as the Drupal administrator, under the Modules page you will find  the PivotViewer 
+    module, enable the module and click on the <br />
+    Save Configuration button.  Then disable Clean URLs from Configuration -> Clean URLs -> Uncheck checkbox.
     <br />
         <br />
-    <b>Note:</b>To get the PivotViewer module working on Drupal 7, you need to also download the file web.config
+    <b>Note: </b>To get the PivotViewer module working on Drupal 7, you need to also download the file web.config
     from the project site and copy it in <br />Drupal's root folder. This web.config file contains a URL rewrite condition to 
     ignore the PivotViewer module folder. <br /> This path needs to be modified according to the Drupal installation root. This is a workaround to fix a temporary issue.
     <br />    
@@ -104,6 +118,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;/system.net&gt;<br />
     </span>
     <br />
+    <i><u>Configure</u></i><br />
     Before using the PivotViewer module, it has to be configured. The PivotViewer 
     administration page can be accessed from the Modules 
       <br />

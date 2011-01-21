@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{945FFE76-052F-40AB-9081-515B98014CB2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CollectionBuilderRole</RootNamespace>
+    <AssemblyName>CollectionBuilderRole</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics" />
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime" />
+    <Reference Include="Microsoft.WindowsAzure.StorageClient" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\CollectionBuilderRole.dll" />
+    <Content Include="bin\CollectionBuilderRole.pdb" />
+    <Content Include="bin\Microsoft.WindowsAzure.Diagnostics.dll" />
+    <Content Include="bin\Microsoft.WindowsAzure.Diagnostics.xml" />
+    <Content Include="bin\Microsoft.WindowsAzure.StorageClient.dll" />
+    <Content Include="bin\Microsoft.WindowsAzure.StorageClient.xml" />
+    <Content Include="bin\php\ext\php_bz2.dll" />
+    <Content Include="bin\php\ext\php_curl.dll" />
+    <Content Include="bin\php\ext\php_exif.dll" />
+    <Content Include="bin\php\ext\php_gd2.dll" />
+    <Content Include="bin\php\ext\php_gettext.dll" />
+    <Content Include="bin\php\ext\php_gmp.dll" />
+    <Content Include="bin\php\ext\php_imap.dll" />
+    <Content Include="bin\php\ext\php_mbstring.dll" />
+    <Content Include="bin\php\ext\php_mysql.dll" />
+    <Content Include="bin\php\ext\php_mysqli.dll" />
+    <Content Include="bin\php\ext\php_openssl.dll" />
+    <Content Include="bin\php\ext\php_pdo_mysql.dll" />
+    <Content Include="bin\php\ext\php_pdo_odbc.dll" />
+    <Content Include="bin\php\ext\php_pdo_sqlite.dll" />
+    <Content Include="bin\php\ext\php_pgsql.dll" />
+    <Content Include="bin\php\ext\php_soap.dll" />
+    <Content Include="bin\php\ext\php_sockets.dll" />
+    <Content Include="bin\php\ext\php_sqlite3.dll" />
+    <Content Include="bin\php\ext\php_tidy.dll" />
+    <Content Include="bin\php\ext\php_xmlrpc.dll" />
+    <Content Include="bin\php\install.txt" />
+    <Content Include="bin\php\libeay32.dll" />
+    <Content Include="bin\php\libpq.dll" />
+    <Content Include="bin\php\license.txt" />
+    <Content Include="bin\php\news.txt" />
+    <Content Include="bin\php\php-cgi.exe" />
+    <Content Include="bin\php\php.exe" />
+    <Content Include="bin\php\php.gif" />
+    <Content Include="bin\php\php5.dll" />
+    <Content Include="bin\php\readme-redist-bins.txt" />
+    <Content Include="bin\php\ssleay32.dll" />
+    <Content Include="clientaccesspolicy.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="GenericRequestHandler.aspx" />
+    <Content Include="GenericRequestHandler.php" />
+    <Content Include="php\dev\php5.lib" />
+    <Content Include="php\install.txt" />
+    <Content Include="php\license.txt" />
+    <Content Include="php\news.txt" />
+    <Content Include="php\phar.phar.bar" />
+    <Content Include="php\pharcommand.phar" />
+    <Content Include="php\php.gif" />
+    <Content Include="php\php.ini" />
+    <Content Include="php\php5embed.lib" />
+    <Content Include="php\readme-redist-bins.txt" />
+    <Content Include="Pictures\Chrysanthemum.jpg" />
+    <Content Include="Pictures\Desert.jpg" />
+    <Content Include="Pictures\Hydrangeas.jpg" />
+    <Content Include="Pictures\Jellyfish.jpg" />
+    <Content Include="Pictures\Koala.jpg" />
+    <Content Include="Pictures\Lighthouse.jpg" />
+    <Content Include="Pictures\Penguins.jpg" />
+    <Content Include="Pictures\Tulips.jpg" />
+    <Content Include="Web.roleconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GenericRequestHandler.ashx.cs">
+      <DependentUpon>GenericRequestHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HttpHandlers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\php\extras\openssl\" />
+    <Folder Include="bin\php\PEAR\" />
+    <Folder Include="php\ext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\php\dev\php5.lib" />
+    <None Include="bin\php\phar.phar.bar" />
+    <None Include="bin\php\pharcommand.phar" />
+    <None Include="bin\php\php.ini" />
+    <None Include="bin\php\php5embed.lib" />
+    <Content Include="GenericRequestHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CollectionFactories\CollectionFactories.csproj">
+      <Project>{47D2E160-F701-42C8-8CCC-1D5411C54B8E}</Project>
+      <Name>CollectionFactories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PivotServerTools\PivotServerTools.csproj">
+      <Project>{15C9BFF4-5087-48C2-B3CC-169F0A458E39}</Project>
+      <Name>PivotServerTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42131</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

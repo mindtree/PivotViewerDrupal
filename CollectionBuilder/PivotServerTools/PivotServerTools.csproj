@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15C9BFF4-5087-48C2-B3CC-169F0A458E39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PivotServerTools</RootNamespace>
+    <AssemblyName>PivotServerTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collection.cs" />
+    <Compile Include="Facet.cs" />
+    <Compile Include="Internal\DeepZoomImageRequest.cs" />
+    <Compile Include="Internal\DeepZoomImageTile.cs" />
+    <Compile Include="Internal\DziRequest.cs" />
+    <Compile Include="Internal\DziSerializer.cs" />
+    <Compile Include="Internal\TiledImageProviders\SystemWindowsMediaTileImage.cs" />
+    <Compile Include="Internal\TiledImageProviders\TiledImageBase.cs" />
+    <Compile Include="ItemImage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Internal\CollectionItem.cs" />
+    <Compile Include="Internal\CxmlSerializer.cs" />
+    <Compile Include="Internal\DzcSerializer.cs" />
+    <Compile Include="Internal\FacetCategory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollectionFactoryBase.cs" />
+    <Compile Include="Internal\CollectionCache.cs" />
+    <Compile Include="Internal\CollectionFactories.cs" />
+    <Compile Include="Internal\CollectionImageTileBuilder.cs" />
+    <Compile Include="Internal\FactoryClassFinder.cs" />
+    <Compile Include="Internal\ImageProviders\DeepZoomImage.cs" />
+    <Compile Include="Internal\ImageProviders\DynamicImage.cs" />
+    <Compile Include="Internal\ImageProviders\FileImage.cs" />
+    <Compile Include="Internal\ImageProviders\ImageBase.cs" />
+    <Compile Include="Internal\ImageProviders\ImageProviderBase.cs" />
+    <Compile Include="Internal\ImageProviders\WebImage.cs" />
+    <Compile Include="Internal\ImageRequest.cs" />
+    <Compile Include="Internal\MortonHelpers.cs" />
+    <Compile Include="PivotHttpHandlers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

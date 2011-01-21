@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CollectionBuilderWrapper", "CollectionBuilderWrapper\CollectionBuilderWrapper.ccproj", "{BE28D48D-CF9F-45E1-B3B3-13BCC9928435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionBuilderRole", "CollectionBuilderRole\CollectionBuilderRole.csproj", "{945FFE76-052F-40AB-9081-515B98014CB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionFactories", "CollectionFactories\CollectionFactories.csproj", "{47D2E160-F701-42C8-8CCC-1D5411C54B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PivotServerTools", "PivotServerTools\PivotServerTools.csproj", "{15C9BFF4-5087-48C2-B3CC-169F0A458E39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE28D48D-CF9F-45E1-B3B3-13BCC9928435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE28D48D-CF9F-45E1-B3B3-13BCC9928435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE28D48D-CF9F-45E1-B3B3-13BCC9928435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE28D48D-CF9F-45E1-B3B3-13BCC9928435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{945FFE76-052F-40AB-9081-515B98014CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{945FFE76-052F-40AB-9081-515B98014CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{945FFE76-052F-40AB-9081-515B98014CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{945FFE76-052F-40AB-9081-515B98014CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D2E160-F701-42C8-8CCC-1D5411C54B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D2E160-F701-42C8-8CCC-1D5411C54B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D2E160-F701-42C8-8CCC-1D5411C54B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D2E160-F701-42C8-8CCC-1D5411C54B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C9BFF4-5087-48C2-B3CC-169F0A458E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C9BFF4-5087-48C2-B3CC-169F0A458E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C9BFF4-5087-48C2-B3CC-169F0A458E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C9BFF4-5087-48C2-B3CC-169F0A458E39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

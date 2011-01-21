@@ -13,18 +13,7 @@
         .style4
         {
             color: #333333;
-        }
-        .style5
-        {
-            width: 143px;
-            font-family: "Courier New", Courier, monospace;
-            font-size: x-small;
-        }
-        .style6
-        {
-            width: 369px;
-            font-family: "Courier New", Courier, monospace;
-            font-size: x-small;
+            font-size:small;
         }
         .style7
         {
@@ -40,6 +29,70 @@
             color:Red;
             font-weight:bold;
         }                
+        .style10
+        {
+            width: 261px;
+        }
+        .style12
+        {
+            width: 490px;
+        }
+        .style14
+        {
+            width: 281px;
+        }
+        .style15
+        {
+            width: 168px;
+        }
+        .style16
+        {
+            height: 94px;
+            width: 261px;
+        }
+        .style17
+        {
+            height: 94px;
+            width: 400px;
+        }
+        .style18
+        {
+            height: 94px;
+            width: 490px;
+        }
+        .style19
+        {
+            height: 92px;
+            width: 261px;
+        }
+        .style20
+        {
+            height: 92px;
+            width: 400px;
+        }
+        .style21
+        {
+            height: 92px;
+            width: 490px;
+        }
+        .style22
+        {
+            width: 281px;
+            height: 91px;
+        }
+        .style23
+        {
+            width: 168px;
+            height: 91px;
+        }
+        .style24
+        {
+            height: 91px;
+        }
+        .style25
+        {
+            width: 400px;
+        }
     </style>
 </head>
 <body>
@@ -65,33 +118,124 @@
     <span class="style3">Contributors</span><br />
     <span class="style4"><a href="http://www.mindtree.com">Mindtree Limited</a></span><br class="style4" />
 	<br/>    
-    <span class="style3">Download</span><br />
-    The latest version of the Pivotviewer module can be downloaded from the
-    <a href="https://github.com/mindtree/PivotViewerDrupal" target="_blank">project site</a>.<br />
-    <br />
     </span><span class="style3">License</span><br />
     <span class="style4">This software is released free of charge under the terms of the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License v2</a>. 
     The license document is available <a href="license">here</a>.</span><br />
     <br />
-    <html>
-
-    <span class="style3">
-        Install</span><br />
-    <span class="style4">
+    <span class="style3">Download</span><br />
+    The latest version of the Pivotviewer module can be downloaded from the
+    <a href="https://github.com/mindtree/PivotViewerDrupal" target="_blank">project site</a>.<br />
     <br />
-    <i><u>Download</u></i><br />
-    Microsoft Silverlight PivotViewer is distributed under the Microsoft Software License Terms and has not been included in this module. <br />
-    Users have to download the Silverlight PivotViewer binaries and include them in the module as described below.<br /> 
-    
+
+    <span class="style4">
+    Microsoft Silverlight PivotViewer is distributed under the Microsoft Software License Terms and has not been included in this module. 
+    <br />
+        Similarly, Silverlight and Windows Azure related dlls also have not been included in this module.<br />
+    Users have to download the binaries and include them in the module as described below.<br /> 
     <ol>
-    <li>Download the file <b>pivot_viewer.zip</b> from the project site and extract the contents to a local folder.</li> 
-    <li>In the extracted folder you will find the file <b>SilverlightPVClientControl.xap</b> under <b>pivot_viewer/addpivotcontrol/ClientBin</b>.</li>
-    <li>Rename file <b>SilverlightPVClientControl.xap</b> to <b>SilverlightPVClientControl.zip</b>.</li> 
-    <li>Download Microsoft Silverlight PivotViewer from <a href="http://www.microsoft.com/downloads/en/details.aspx?displaylang=en&FamilyID=9a1bb862-d80c-4145-9320-b279a63bff91" target="_blank">Microsoft site</a> and install it.</li>
-    <li>Add all the DLL files in the PivotViewer bin folder (normally <b>C:\Program Files\Microsoft SDKs\Silverlight\v4.0\PivotViewer\Aug10\Bin</b>) to <b>SilverlightPVClientControl.zip</b>.</li>
-    <li>Rename the file <b>SilverlightPVClientControl.zip</b> back to <b>SilverlightPVClientControl.xap</b> and package all the module files as <b>pivot_viewer.zip</b>.</li>
+    <li> <b>
+    <span class="style4">
+        Silverlight </span>PivotViewer DLLs</b></li> 
+    </br>
+    <table border="1" cellpadding="10" bgcolor="#F8F2F2" width="850" font-family: "Courier New", Courier, monospace;>
+    <tr bgcolor="#DEDCDC">
+    <th class="style14">
+    <span class="style4">
+        Silverlight PivotViewer </span>DLLs</th>
+    <th class="style15">URL to download from</th>
+    <th>Steps</th>
+    </tr>
+    <tr><td class="style14">System.Windows.Pivot.dll
+        <br />
+        System.Windows.Pivot.Model.dll System.Windows.Pivot.SharedUI.dll 
+        System.Windows.Pivot.StringResources.dll System.Windows.Pivot.Utilities.dll</td>
+        <td class="style15">
+            <a href="http://www.microsoft.com/downloads/en/details.aspx?displaylang=en&FamilyID=9a1bb862-d80c-4145-9320-b279a63bff91" 
+                target="_blank">Microsoft site- PivotViewer</a>
+            <br />
+        </td><td>1.Download the file <b>pivot_viewer.zip</b> from the project site and extract 
+            the contents to a local folder.<span class="style4"><br />
+            2.In the extracted folder you will find the file <b>SilverlightPVClientControl.xap</b> under <b>pivot_viewer/addpivotcontrol/ClientBin</b>.<br />
+            3.Rename file <b>SilverlightPVClientControl.xap</b> to <b>SilverlightPVClientControl.zip</b>.<br />
+            4.Add all the DLL files in the PivotViewer bin folder (normally from <b>C:\Program Files\Microsoft SDKs\Silverlight\v4.0\PivotViewer\Aug10\Bin</b>) to <b>SilverlightPVClientControl.zip</b>.</span><br />
+        </td></tr>
+  
+    </table>
+    <br />
+    
+     <li> <b>Silverlight DLLs</b></li> 
+    </br>
+    <table border="1" cellpadding="10" bgcolor="#F8F2F2" width="850" font-family: "Courier New", Courier, monospace;>
+    <tr bgcolor="#DEDCDC">
+    <th class="style10">Silverlight DLLs</th>
+    <th class="style25">URL to download from</th>
+    <th class="style12">Steps</th>
+    </tr>
+    <tr><td class="style19">System.Windows.Controls
+        <br />
+        System.Xml.Linq.dll System.Xml.Serialization.dll 
+        System.Windows.Controls.Navigation.dll </td><td class="style20">
+            <a href="http://www.microsoft.com/downloads/en/confirmation.aspx?FamilyID=298170d6-567c-4b90-9917-490ffcddba87&displaylang=en" 
+                target="_blank">Microsoft site- Silverlight SDK </a>
+        </td><td class="style21">1.Install Silverlight SDK<br />
+            2.Copy DLLs from installed Silverlight 4.0 SDK physical path(ex : <b>C:\Program 
+            Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client)</b> to <b>
+            SilverlightPVClientControl.zip&nbsp; </b><br />
+        </td></tr>
+         <tr><td class="style16">System.Windows.Controls.Layout.Toolkit.dll 
+             System.Windows.Controls.Toolkit.dll 
+             System.Windows.Controls.Toolkit.Internals.dll</td><td class="style17">
+            <a href="http://silverlight.codeplex.com/releases/view/43528" 
+                target="_blank">Microsoft site- Silverlight Toolkit </a>
+        </td><td class="style18">1.Install Silverlight Toolkit<br />
+                 <span class="style4">
+                 <b class="style8"> 
+                 [Note:Visual studio 2010 needs to be installed before you install Silverlight 
+                 Toolkit] </b></span><br />
+            2.Copy mentioned DLLs from installed Silverlight 4.0 SDK physical path(ex :<b> C:\Program 
+            Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client)</b> to <b>
+            SilverlightPVClientControl.zip</b><br />
+                 3.Rename the file 
+    <span class="style4">
+                 <b>
+            SilverlightPVClientControl.zip</b></span> back to 
+                 <span class="style4">
+                 <b>
+            SilverlightPVClientControl.xap.</b></span><br />
+        </td></tr>
+  
+    </table>
+    <br />
+     <li> <b>Windows Azure DLLs</b></li> 
+    </br>
+    <table border="1" cellpadding="10" bgcolor="#F8F2F2" width="850" font-family: "Courier New", Courier, monospace;>
+    <tr bgcolor="#DEDCDC">
+    <th class="style14"> <b>
+    <span class="style4">
+        Windows Azure </span></b>DLLs</th>
+    <th class="style15">URL to download from</th>
+    <th>Steps</th>
+    </tr>
+    <tr><td class="style22">Microsoft.WindowsAzure.Diagnostics.dll 
+        Microsoft.WindowsAzure.StorageClient.dll</td>
+        <td class="style23">
+            <a href="http://msdn.microsoft.com/en-us/windowsazure/cc974146.aspx" 
+                target="_blank">Microsoft site- Windows Azure</a>
+            <br />
+        </td><td class="style24">1.Download Latest version of Windows Azure SDK.<br />
+            2.Copy the dlls from installed location (ex:<b> C:\Program Files\Windows Azure 
+            SDK\v1.2\ref)</b> to bin folder 
+            <b>(..\sites\all\modules\pivot_viewer\addpivotcontrol\bin) </b>of PivotViewer drupal 
+            module
+            <br />
+            3.P<span class="style4">ackage all the module files as <b>pivot_viewer.zip</b>.</span></td></tr>
+  
+    </table>
+    <br />
     </ol>
-     <i><u>Install</u></i>
+    
+    <br />
+    <span class="style3">Install</span>
     <br />
     Install modified Drupal module file pivot_viewer.zip from the Module Upload UI or extract the contents to folder sites/all/modules. 
     <br />
@@ -118,7 +262,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;/system.net&gt;<br />
     </span>
     <br />
-    <i><u>Configure</u></i><br />
+    <span class="style3">Configure</span><br />
     Before using the PivotViewer module, it has to be configured. The PivotViewer 
     administration page can be accessed from the Modules 
       <br />

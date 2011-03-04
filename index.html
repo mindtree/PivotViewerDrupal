@@ -13,7 +13,6 @@
         .style4
         {
             color: #333333;
-            font-size:small;
         }
         .style7
         {
@@ -130,7 +129,7 @@
     <span class="style4">
     Microsoft Silverlight PivotViewer is distributed under the Microsoft Software License Terms and has not been included in this module. 
     <br />
-        Similarly, Silverlight and Windows Azure related dlls also have not been included in this module.<br />
+        Similarly, Silverlight and Windows Azure related DLLs also have not been included in this module.<br />
     Users have to download the binaries and include them in the module as described below.<br /> 
     <ol>
     <li> <b>
@@ -246,16 +245,7 @@
     In case the web.config in Drupal's root folder has been modified, add the following condition to the rule "Short URLs" <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style7">&lt;add input="{URL}" pattern="^.*/sites/all/modules/pivot_viewer/addpivotcontrol/" ignoreCase="false" negate="true" /&gt;</span>
     <br />
-    <br />
-    If Drupal is installed behind a firewall, the network proxy details need to be updated by adding the following XML element in the file
-    <br /> sites/all/modules/pivot_viewer/addpivotcontrol/web.config. Under the root 'Configuration' element add the following element<br />
-    <span class="style7">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &lt;system.net&gt; <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;defaultProxy&gt; <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &lt;proxy bypassonlocal="True" proxyaddress="http://<span class="style8">IPAddress:Port</span>"/&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;/defaultProxy&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;/system.net&gt;<br />
-    </span>
+
     <br />
     <span class="style3">Configure</span><br />
     Before using the PivotViewer module, it has to be configured. The PivotViewer 
@@ -270,6 +260,9 @@
     <a href="http://drupal.org/project/media" target="_blank">Media Folder</a>, and
     <a href="http://www.silverlight.net/learn/pivotviewer/collection-xml-schema/" target="_blank">Pivot Collection</a>
     <br />
+    Each of the data source types require different input values as specified by the text fields.
+    <br />
+    If Drupal is installed behind a firewall, the network proxy details need to be provided in the administration page.<br />
     The administration page also allows the administrator to associate PivotViewer 
     with available content types. Click on the 'Save Configuration' button <br />
     after selecting the required content types.
@@ -303,10 +296,10 @@
         be displayed in its place on viewing the content.<br />
         A saved Drupal Basic Page containing a PivotViewer will look something like this.<br />
         <img src="images/Thumb/article.jpg" alt="" onclick="window.open('images/article.jpg');"/>
-        <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
+    <br /><br />
+    <span class="style3">Uninstall</span>
+    <br />
+        Before uninstalling the PivotViewer module, IIS should be restarted to allow the .NET DLLs to be unloaded.
 
 </body>
 </html>
